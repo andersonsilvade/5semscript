@@ -1,4 +1,4 @@
 5semscript
 ==========
 
-projeto 5ºsemestre scipt
+Projeto 5ºSemestre Script
