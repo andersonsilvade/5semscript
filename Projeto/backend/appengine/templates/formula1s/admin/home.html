@@ -1,0 +1,41 @@
+{% extends 'formula1s/base.html' %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{% trans %}This is a generic home for formula1_app {% endtrans %}  </h1>
+                <a href="{{ new_path }}" class="btn btn-success">{% trans %}Create New Formula1{% endtrans %}</a>
+                <hr/>
+                <h2>{% trans %}List of Formula1s{% endtrans %}</h2>
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th/>
+                        <th>{% trans %}Id{% endtrans %}</th>
+                        <th>{% trans %}Creation{% endtrans %}</th>
+                        <th>{% trans %}Descricao{% endtrans %}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for formula1 in formula1s %}
+                        <tr>
+                            <td><a href="{{ formula1.edit_path }}" class="btn btn-success btn-sm"><i
+                                    class="glyphicon glyphicon-pencil"></i></a></td>
+                            <td>{{ formula1.id }}</td>
+                            <td>{{ formula1.creation }}</td>
+                            <td>{{ formula1.descricao }}</td>
+                            <td>
+                                <form action="{{ formula1.delete_path }}" method="post" onsubmit="return confirm('{{_('Are you sure to delete? Press cancel to avoid deletion.')}}');">
+                                    {{ csrf_input() }}
+                                    <button class="btn btn-danger btn-sm"><i
+                                            class="glyphicon glyphicon-trash"></i></button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

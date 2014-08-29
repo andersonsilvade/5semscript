@@ -1,0 +1,31 @@
+{% extends 'indys/base.html' %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{% trans %}Indy {% endtrans %}  </h1>
+                {% if _logged_user and ('ADMIN' in _logged_user.groups) %}
+                <a href="{{ admin_path }}" class="btn btn-success">{% trans %}Admin{% endtrans %}</a>
+                {% endif %}
+                <hr/>
+                <h2>{% trans %}Hélio Castro Neves{% endtrans %}</h2>
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>{% trans %}Descricao{% endtrans %}</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for indy in indys %}
+                        <tr>
+                            <td>{{ indy.descricao }}</td>
+                        </tr>
+                    {% endfor %}
+                    <img src = "/static/img/indy.jpg">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
