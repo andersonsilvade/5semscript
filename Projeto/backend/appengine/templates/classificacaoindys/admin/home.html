@@ -1,0 +1,41 @@
+{% extends 'classificacaoindys/base.html' %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{% trans %}This is a generic home for classificacaoindy_app {% endtrans %}  </h1>
+                <a href="{{ new_path }}" class="btn btn-success">{% trans %}Create New Classificacaoindy{% endtrans %}</a>
+                <hr/>
+                <h2>{% trans %}List of Classificacaoindys{% endtrans %}</h2>
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th/>
+                        <th>{% trans %}Id{% endtrans %}</th>
+                        <th>{% trans %}Creation{% endtrans %}</th>
+                        <th>{% trans %}Classificacao{% endtrans %}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for classificacaoindy in classificacaoindys %}
+                        <tr>
+                            <td><a href="{{ classificacaoindy.edit_path }}" class="btn btn-success btn-sm"><i
+                                    class="glyphicon glyphicon-pencil"></i></a></td>
+                            <td>{{ classificacaoindy.id }}</td>
+                            <td>{{ classificacaoindy.creation }}</td>
+                            <td>{{ classificacaoindy.Classificacao }}</td>
+                            <td>
+                                <form action="{{ classificacaoindy.delete_path }}" method="post" onsubmit="return confirm('{{_('Are you sure to delete? Press cancel to avoid deletion.')}}');">
+                                    {{ csrf_input() }}
+                                    <button class="btn btn-danger btn-sm"><i
+                                            class="glyphicon glyphicon-trash"></i></button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

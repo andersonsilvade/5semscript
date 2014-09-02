@@ -21,11 +21,11 @@
     <!-- Bootstrap -->
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/default.css" rel="stylesheet">
-    <link href = "/static/cssmenu/styles.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="styles.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="script.js"></script>
+    <script src="/static/bootstrap/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
     <style>
         .pad8 {
             margin: 8px 15px;
@@ -57,11 +57,57 @@
         <div class id = "menucss" >
             <ul class="nav navbar-nav"> <!--menu -->
                 {% macro select_tab(tab='') %}
+                    <li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size = "4">Formula 1</font><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/formula1s">Noticia</a>
+								</li>
+								<li>
+									<a href="/classificacaof1s">Classificação</a>
+								</li>
 
-                    <li {{ 'class=active' if tab=='Formula1' }}><a href="/formula1s"class="navbar-brand">{% trans %}Formula 1{% endtrans %}</a></li>
-                    <li {{ 'class=active' if tab=='Indy' }}><a href="/indys"class="navbar-brand">{% trans %}Formula Indy{% endtrans %}</a></li>
-                    <li {{ 'class=active' if tab=='Nascar' }}><a href="/nascars"class="navbar-brand">{% trans %}Nascar Sprint Cup{% endtrans %}</a></li>
-                    <li {{ 'class=active' if tab=='Dtm' }}><a href="/dtms"class="navbar-brand">{% trans %}DTM{% endtrans %}</a></li>
+							</ul>
+					</li>
+
+                    <li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size = "4">Formula Indy</font><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/indys">Noticia</a>
+								</li>
+								<li>
+									<a href="/classificacaoindys">Classificação</a>
+								</li>
+
+							</ul>
+				    </li>
+                    <li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size = "4">Nascar</font><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/nascars">Noticia</a>
+								</li>
+								<li>
+									<a href="/classificacaonascars">Classificação</a>
+								</li>
+
+							</ul>
+					</li>
+                    <li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size = "4">DTM</font><strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/dtms">Noticia</a>
+								</li>
+								<li>
+									<a href="/classificacaodtms">Classificação</a>
+								</li>
+
+							</ul>
+						</li>
+
+
                     {% if _logged_user and 'ADMIN' in _logged_user.groups %}
                         <li {{ 'class=active' if tab=='ADMIN' }}><a href="/admin">{% trans %}Admin{% endtrans %}</a></li>
                     {% endif %}
