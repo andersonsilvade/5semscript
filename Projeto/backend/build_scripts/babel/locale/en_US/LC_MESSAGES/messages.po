@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-07-15 17:41-0300\n"
+"POT-Creation-Date: 2014-09-03 12:28-0300\n"
 "PO-Revision-Date: 2014-06-26 00:14-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -18,165 +18,430 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/home.html:11
-msgid "A Full-Stack project for Google App Engine"
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:46
+#, python-format
+msgid "Must be one of: %(choices)s"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/home.html:19
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:51
+msgid "Required field"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:128
+#, python-format
+msgid "Has %(len)s characters and it must have less than %(max_len)s"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:137
+msgid "Invalid email"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:158
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:189
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:234
+#, python-format
+msgid "Must be greater than %(lower)s"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:160
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:191
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:236
+#, python-format
+msgid "Must be less than %(upper)s"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:163
+msgid "Must be integer"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:194
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:239
+msgid "Must be a number"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:271
+#, python-format
+msgid "Invalid date. Must be on format %(format)s"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:271
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:277
+msgid "MM/dd/YYYY"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:311
+#, python-format
+msgid "Invalid datetime. Must be on format %(format)s"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:311
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/lib/gaeforms/base.py:316
+msgid "MM/dd/YYYY HH:mm:ss"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/home.html:20
 msgid ""
-"Create CRUD code on\n"
-"                        <a href=\"https://cloud.google.com/products/app-"
-"engine/\">App Engine</a>"
+"<a href=\"/formula1s\">Formula1<a/>\n"
+"                        </a>"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/home.html:25
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/home.html:36
+msgid "<a href = \"/nascars\">Nascar Sprint Cup</a>"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/home.html:46
 msgid ""
-" Check Courses App\n"
-"                            Out"
+"\n"
+"                        <a href=\"/indys\">Indy</a>"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/home.html:32
-msgid "Tekton is open source."
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/home.html:55
+msgid "<a href = \"/dtms\">DTM</a>"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/home.html:37
-msgid "Check Git Hub Out"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/admin/home.html:5
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/admin/home.html:5
 msgid "Administration Panel"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/admin/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/admin/home.html:8
 msgid "Security Paths Table"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/admin/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/admin/home.html:11
 msgid " Configurations"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/admin/home.html:13
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/admin/home.html:13
 msgid " User Permissions"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/admin/home.html:14
 msgid "Facebook App Data"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/admin/home.html:15
 msgid "Passwordless App Data"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/base/400.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/base/400.html:6
 msgid "Sorry, an error happened and we are investigating"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/base/404.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/base/404.html:6
 msgid "Sorry, page not found"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/base/base.html:52
-msgid "Courses"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/base/base.html:54
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/base/base.html:112
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/home.html:8
 msgid "Admin"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/base/base.html:67
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/base/base.html:125
 msgid "Logout"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/base/base.html:73
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/base/base.html:131
 msgid "Login"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:6
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:6
-msgid "This is a generic home for course_app "
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/home.html:11
+msgid "Classificação 2014"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:11
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:9
-msgid "List of Courses"
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/home.html:15
+msgid "Classificação"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:15
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/form.html:15
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:16
-msgid "D"
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/form.html:11
+msgid "Classificacaodtm Form"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:16
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/form.html:16
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:17
-msgid "F"
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/home.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/home.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/home.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/home.html:16
+msgid "Classificacao"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:17
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/form.html:17
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:18
-msgid "I"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:18
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/form.html:18
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:19
-msgid "Price"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:19
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/form.html:19
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:20
-msgid "Start"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/home.html:20
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/form.html:20
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:21
-msgid "Name"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/form.html:11
-msgid "Course Form"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/form.html:21
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/facebook/form.html:18
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/passwordless/form.html:18
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/form.html:21
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/facebook/form.html:18
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/passwordless/form.html:18
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/form.html:16
 msgid "Save"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:7
-msgid "Create New Course"
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/home.html:6
+msgid "This is a generic home for classificacaodtm_app "
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/home.html:7
+msgid "Create New Classificacaodtm"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/home.html:9
+msgid "List of Classificacaodtms"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/home.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/home.html:14
 msgid "Id"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/home.html:15
 msgid "Creation"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/courses/admin/home.html:38
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaodtms/admin/home.html:28
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/home.html:28
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/home.html:28
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/home.html:28
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:38
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/home.html:28
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/home.html:28
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/home.html:28
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/home.html:28
 msgid "Are you sure to delete? Press cancel to avoid deletion."
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/home.html:13
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/home.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/home.html:6
+msgid "This is a generic home for classificacaof1_app "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/home.html:9
+msgid "List of Classificacaof1s"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/form.html:11
+msgid "Classificacaof1 Form"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaof1s/admin/home.html:7
+msgid "Create New Classificacaof1"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/home.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/home.html:6
+msgid "This is a generic home for classificacaoindy_app "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/home.html:9
+msgid "List of Classificacaoindys"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/form.html:11
+msgid "Classificacaoindy Form"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaoindys/admin/home.html:7
+msgid "Create New Classificacaoindy"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/home.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/home.html:6
+msgid "This is a generic home for classificacaonascar_app "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/home.html:9
+msgid "List of Classificacaonascars"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/form.html:11
+msgid "Classificacaonascar Form"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/classificacaonascars/admin/home.html:7
+msgid "Create New Classificacaonascar"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:6
+msgid "This is a generic home for course_app "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:9
+msgid "List of Courses"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:16
+msgid "D"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:17
+msgid "F"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:17
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/form.html:17
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:18
+msgid "I"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:18
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/form.html:18
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:19
+msgid "Price"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:19
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/form.html:19
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:20
+msgid "Start"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/home.html:20
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/form.html:20
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:21
+msgid "Name"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/form.html:11
+msgid "Course Form"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/courses/admin/home.html:7
+msgid "Create New Course"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/home.html:6
+msgid "DTM "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/home.html:11
+msgid "Augusto Farfus"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/home.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/home.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/home.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/home.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/form.html:15
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/home.html:16
+msgid "Descricao"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/form.html:11
+msgid "Dtm Form"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/home.html:6
+msgid "This is a generic home for dtm_app "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/home.html:7
+msgid "Create New Dtm"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/dtms/admin/home.html:9
+msgid "List of Dtms"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/home.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/home.html:6
+msgid "This is a generic home for formula1_app "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/home.html:9
+msgid "List of Formula1s"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/form.html:11
+msgid "Formula1 Form"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/formula1s/admin/home.html:7
+msgid "Create New Formula1"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/home.html:6
+msgid "Indy "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/home.html:11
+msgid "Hélio Castro Neves"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/form.html:11
+msgid "Indy Form"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/home.html:6
+msgid "This is a generic home for indy_app "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/home.html:7
+msgid "Create New Indy"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/indys/admin/home.html:9
+msgid "List of Indys"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/home.html:13
 msgid "Login Options"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/home.html:25
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/home.html:25
 msgid "Type your email"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/pending.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/pending.html:6
 msgid "Security Information"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/pending.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/pending.html:8
 #, python-format
 msgid ""
 "The email provided by %(provider)s is already in use. For your security, "
@@ -184,145 +449,102 @@ msgid ""
 "                    send an email to %(email)s to ensure it is yours."
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/pending.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/pending.html:11
 msgid "This security procedure will be necessary only this time."
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/pending.html:13
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/passwordless/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/pending.html:13
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/passwordless/home.html:11
 msgid "Check your spam box, once some providers can filter this email."
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/facebook/form.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/facebook/form.html:6
 msgid "Facebook App Form"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/facebook/form.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/facebook/form.html:8
 msgid "This data is used to proceed Facebook login. More information in"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/facebook/form.html:10
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/facebook/form.html:10
 msgid "Facebook Login Docs"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/facebook/form.html:14
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/passwordless/form.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/facebook/form.html:14
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/passwordless/form.html:14
 msgid "Type the app's id"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/facebook/form.html:16
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/passwordless/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/facebook/form.html:16
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/passwordless/form.html:16
 msgid "Type the app's token"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/passwordless/form.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/passwordless/form.html:6
 msgid "Passworless App Form"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/passwordless/form.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/passwordless/form.html:8
 msgid "This data is used to proceed passswordless login. More information in"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/passwordless/home.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/passwordless/home.html:6
 msgid "Login Email Instructions"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/login/passwordless/home.html:8
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/login/passwordless/home.html:8
 msgid ""
 "We will send you an email with the login link using\n"
 "                    <a "
 "href=\"https://pswdless.appspot.com/\">Passwordless</a>."
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/permission/admin.html:41
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/home.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/home.html:6
+msgid "This is a generic home for nascar_app "
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/home.html:9
+msgid "List of Nascars"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/form.html:11
+msgid "Nascar Form"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/nascars/admin/home.html:7
+msgid "Create New Nascar"
+msgstr ""
+
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/permission/admin.html:41
 msgid "Users Table"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/permission/home.html:6
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/permission/home.html:6
 msgid "Security Table"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/permission/home.html:10
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/permission/home.html:10
 msgid "Path"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/permission/home.html:11
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/permission/home.html:11
 msgid "Allowed Groups"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/permission/home.html:12
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/permission/home.html:12
 msgid ""
 "<a href=\"http://pt.wikipedia.org/wiki/Cross-"
 "site_request_forgery\">CSRF</a> Security"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/permission/home.html:22
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/permission/home.html:22
 msgid "Secure"
 msgstr ""
 
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/appengine/templates/permission/home.html:22
+#: C:/Users/Anderson/Desktop/programacaoScript/5semscript/Projeto/backend/appengine/templates/permission/home.html:22
 msgid "Unsecure"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:46
-#, python-format
-msgid "Must be one of: %(choices)s"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:51
-msgid "Required field"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:128
-#, python-format
-msgid "Has %(len)s characters and it must have less than %(max_len)s"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:137
-msgid "Invalid email"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:158
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:189
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:234
-#, python-format
-msgid "Must be greater than %(lower)s"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:160
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:191
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:236
-#, python-format
-msgid "Must be less than %(upper)s"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:163
-msgid "Must be integer"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:194
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:239
-msgid "Must be a number"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:271
-#, python-format
-msgid "Invalid date. Must be on format %(format)s"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:271
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:277
-msgid "MM/dd/YYYY"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:311
-#, python-format
-msgid "Invalid datetime. Must be on format %(format)s"
-msgstr ""
-
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:311
-#: /home/renzo/PycharmProjects/tekton-fullstack/backend/venv/lib/python2.7/site-packages/gaeforms/base.py:316
-msgid "MM/dd/YYYY HH:mm:ss"
 msgstr ""
 
 #~ msgid "Tekton Full-Stack is open soure. "
@@ -341,5 +563,29 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Has %(len)s characters and it must have less than 500"
+#~ msgstr ""
+
+#~ msgid "A Full-Stack project for Google App Engine"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create CRUD code on\n"
+#~ "                        <a "
+#~ "href=\"https://cloud.google.com/products/app-engine/\">App "
+#~ "Engine</a>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ " Check Courses App\n"
+#~ "                            Out"
+#~ msgstr ""
+
+#~ msgid "Tekton is open source."
+#~ msgstr ""
+
+#~ msgid "Check Git Hub Out"
+#~ msgstr ""
+
+#~ msgid "Courses"
 #~ msgstr ""
 
