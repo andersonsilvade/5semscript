@@ -18,6 +18,19 @@ indexes:
 
 - kind: Node
   properties:
+  - name: cat
+  - name: class
+  - name: pon
+
+- kind: Node
+  properties:
+  - name: cat
+  - name: class
+  - name: pon
+    direction: desc
+
+- kind: Node
+  properties:
   - name: class
   - name: creation
 

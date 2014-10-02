@@ -8,20 +8,29 @@
                 <a href="{{ admin_path }}" class="btn btn-success">{% trans %}Admin{% endtrans %}</a>
                 {% endif %}
                 <hr/>
-                <h2>{% trans %}List of Classificacaonascars{% endtrans %}</h2>
-                <table class="table table-striped table-hover">
+                <h2>{% trans %}Classificação 2014{% endtrans %}</h2>
+               <table class="table table-striped table-hover">
                     <thead>
                     <tr>
-                        <th>{% trans %}Classificacao{% endtrans %}</th>
+                        <th>POSIÇÂO</th>
+                        <th>PILOTO</th>
+                        <th>EQUIPE</th>
+                        <th>PONTOS</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    {% for classificacaonascar in classificacaonascars %}
-                        <tr>
-                            <td>{{ classificacaonascar.Classificacao }}</td>
-                        </tr>
-                    {% endfor %}
-                    </tbody>
+
+
+                      {% for pilotos in nascar %}
+                          <tr>
+                              <td >{{pilotos.index}}</td>
+                              <td>{{ pilotos.pil }}</td>
+                              <td>{{ pilotos.equ }}</td>
+                              <td>{{ pilotos.pon }}</td>
+                          </tr>
+
+
+                     {% endfor %}
+
                 </table>
             </div>
         </div>

@@ -3,32 +3,31 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>{% trans %}{% endtrans %}  </h1>
                 {% if _logged_user and ('ADMIN' in _logged_user.groups) %}
                 <a href="{{ admin_path }}" class="btn btn-success">{% trans %}Admin{% endtrans %}</a>
                 {% endif %}
                 <hr/>
                 <h2>{% trans %}Classificação 2014{% endtrans %}</h2>
-                <table class="table table-striped table-hover">
+                  <table class="table table-striped table-hover">
                     <thead>
                     <tr>
-                        <th>{% trans %}Classificação{% endtrans %}</th>
+                        <th>POSIÇÂO</th>
+                        <th>PILOTO</th>
+                        <th>EQUIPE</th>
+                        <th>PONTOS</th>
                     </tr>
-                       <table>
-                         <td width="70"><b>Posição</b></td>
-                         <td width="200"><b>Piloto</b></td>
-                         <td width="150"><b>Equipe</b></td>
-                         <td><b>Pontuação</b></td>
-
-                       </table>
                     </thead>
-                    <tbody>
-                    {% for classificacaodtm in classificacaodtms %}
-                        <tr>
-                            <td>{{ classificacaodtm.Classificacao }}</td>
-                        </tr>
-                    {% endfor %}
-                    </tbody>
+
+
+                      {% for pilotos in dtm %}
+                          <tr>
+                              <td >{{pilotos.index}}</td>
+                              <td>{{ pilotos.pil }}</td>
+                              <td>{{ pilotos.equ }}</td>
+                              <td>{{ pilotos.pon }}</td>
+                          </tr>
+                      {% endfor %}
+
                 </table>
             </div>
         </div>
