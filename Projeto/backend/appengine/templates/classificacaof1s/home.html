@@ -18,12 +18,13 @@
                         <th>PONTOS</th>
                     </tr>
                     </thead>
-                      {% for pilotos in f1 %}
+                      {% for piloto in f1 %}
                           <tr>
-                              <td>{{pilotos.key.id()}}</td>
-                              <td>{{ pilotos.pil }}</td>
-                              <td>{{ pilotos.equ }}</td>
-                              <td>{{ pilotos.pon }}</td>
+                              <td><a href = "{{ piloto.edit_path }}"class="btn btn-primary" ><i class="glyphicon glyphicon-pencil"></i></a></td>
+                              <td>{{piloto.key.id()}}</td>
+                              <td>{{ piloto.pil }}</td>
+                              <td>{{ piloto.equ }}</td>
+                              <td>{{ piloto.pon }}</td>
                           </tr>
                       {% endfor %}
 

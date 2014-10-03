@@ -31,7 +31,7 @@ class ClassificacaoForm(ModelForm):
 
 
 
-def salvar(_resp,**propriedades):
+def salvar(**propriedades):
     classificacao_form = ClassificacaoForm(**propriedades)
     erros = classificacao_form.validate()
     if erros:
@@ -42,9 +42,6 @@ def salvar(_resp,**propriedades):
         classificacao=classificacao_form.fill_model()
         classificacao.put()
         return RedirectResponse(router.to_path(form))
-
-
-
 
 
 
