@@ -7,24 +7,39 @@
                 <a href="{{ admin_path }}" class="btn btn-success">{% trans %}Admin{% endtrans %}</a>
                 {% endif %}
                 <hr/>
-                <h2>{% trans %} Mundial de Pilotos 2014{% endtrans %}</h2>
+
                 <table class="table table-striped table-hover">
                     <thead>
                     <tr>
+
                         <th></th>
                         <th>POSIÇÂO</th>
                         <th>PILOTO</th>
                         <th>EQUIPE</th>
                         <th>PONTOS</th>
+
+                        <th></th>
+
                     </tr>
                     </thead>
-                      {% for piloto in f1 %}
+                      {% for pilotos in f1 %}
+                          <h2>{{ pilotos.texto }}</h2>
+
                           <tr>
-                              <td><a href = "{{ piloto.edit_path }}"class="btn btn-primary" ><i class="glyphicon glyphicon-pencil"></i></a></td>
-                              <td>{{piloto.key.id()}}</td>
-                              <td>{{ piloto.pil }}</td>
-                              <td>{{ piloto.equ }}</td>
-                              <td>{{ piloto.pon }}</td>
+
+                              <td><a href = "{{ pilotos.edit_path }}"class="btn btn-primary" ><i class="glyphicon glyphicon-pencil"></i></a></td>
+
+                              <td>{{ loop.index}}</td>
+                              <td>{{ pilotos.pil }}</td>
+                              <td>{{ pilotos.equ }}</td>
+                              <td>{{ pilotos.pon }}</td>
+
+                              <td><form action="{{ pilotos.delete_path }}" method="post">
+                               {{ csrf_input() }}
+                                  <button class="btn btn-danger"><i class = "glyphicon glyphicon-trash"></i></button>
+                              </form>
+
+                              </td>
                           </tr>
                       {% endfor %}
 

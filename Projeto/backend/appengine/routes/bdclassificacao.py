@@ -20,14 +20,15 @@ class Classificacao(Node):
     equ = ndb.StringProperty(required=True)
     cat = ndb.StringProperty(required=True)
     pon = ndb.IntegerProperty(required=True)
+    texto = ndb.StringProperty()
 
 class ClassificacaoFormTable(ModelForm):
     _model_class = Classificacao
-    _include = [Classificacao.pil,Classificacao.equ,Classificacao.cat,Classificacao.pon]
+    _include = [Classificacao.pil,Classificacao.equ,Classificacao.cat,Classificacao.pon,Classificacao.texto]
 
 class ClassificacaoForm(ModelForm):
     _model_class = Classificacao
-    _include = [Classificacao.pil,Classificacao.equ,Classificacao.cat,Classificacao.pon]
+    _include = [Classificacao.pil,Classificacao.equ,Classificacao.cat,Classificacao.pon,Classificacao.texto]
 
 
 
