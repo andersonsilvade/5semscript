@@ -1,0 +1,33 @@
+{% extends 'pilotos/base.html' %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{% trans %}This is a generic home for piloto_app {% endtrans %}  </h1>
+                {% if _logged_user and ('ADMIN' in _logged_user.groups) %}
+                <a href="{{ admin_path }}" class="btn btn-success">{% trans %}Admin{% endtrans %}</a>
+                {% endif %}
+                <hr/>
+                <h2>{% trans %}List of Pilotos{% endtrans %}</h2>
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>{% trans %}Categoria{% endtrans %}</th>
+                        <th>{% trans %}Nome{% endtrans %}</th>
+                        <th>{% trans %}Equipe{% endtrans %}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for piloto in pilotos %}
+                        <tr>
+                            <td>{{ piloto.categoria }}</td>
+                            <td>{{ piloto.nome }}</td>
+                            <td>{{ piloto.equipe }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,14 +1,59 @@
 {% extends 'classificacaof1s/base.html' %}
+{% block js %}
+    <script type="text/javascript" src="/static/pilotos.js"></script>
+{% endblock %}
 {% block body %}
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-9">
                 {% if _logged_user and ('ADMIN' in _logged_user.groups) %}
                 <a href="{{ admin_path }}" class="btn btn-success">{% trans %}Admin{% endtrans %}</a>
                 {% endif %}
-                <hr/>
+                 <button id="mostrar-form-btn" class="btn btn-success">{% trans %}Cadastrar Piloto{% endtrans %}</button>
+                 <hr/>
+                 <div id = "pilotos-form" class="well">
+                     <h1 class="text-center">Cadastrar Pilotos</h1>
+                     <div role="form">
+                         <input type="hidden" value="04dacef8c8ee6d7a4dc582034ad5db5e" name ="_csrf_code">
 
-                <table class="table table-striped table-hover">
+                         <div id = "pilotoDiv" class="form-group">
+                             <label for="pilotoInput" class="control-label">Piloto</label>
+                             <input id = "pilotoInput" type = "text" class="form-control" name="piloto" value="" >
+                             <span id="help-piloto" class="help-block"></span>
+                         </div>
+
+                         <div id = "equipeDiv" class="form-group">
+                             <label for="equipeInput" class="control-label">Equipe</label>
+                             <input id = "equipeInput" type = "text" class="form-control" name="equipe" value="">
+                             <span id="help-equipe" class="help-block"></span>
+                         </div>
+
+                         <div id = "pontosDiv" class="form-group">
+                             <label for="pontosInput" class="control-label">Pontos</label>
+                             <input id = "pontosInput" type = "text" class="form-control" name="pontos" value="" >
+                             <span id="help-pontos" class="help-block"></span>
+                         </div>
+
+                         <div id = "categoriaDiv" class="form-group">
+                             <label for="categoriaInput" class="control-label">Categoria</label>
+                             <input id = "categoriaInput" type = "text" class="form-control" name="categoria" value="" >
+                             <span id="help-categoria" class="help-block"></span>
+                         </div>
+                         
+                         <div id = "textoDiv" class="form-group">
+                             <label for="textoInput" class="control-label">Texto Descrição</label>
+                             <input id = "textoInput" type = "text" class="form-control" name="texto" value="" >
+                             <span id="help-texto" class="help-block"></span>
+                         </div>
+                         <button id = "salvar-btn" class="btn btn-success">Salvar</button>
+                         <img id = "ajax-gif" src = "/static/img/ajax.gif"/>
+
+                     </div>
+
+                 </div>
+
+
+                 <table class="table table-striped table-hover">
                     <thead>
                     <tr>
 
@@ -22,27 +67,30 @@
 
                     </tr>
                     </thead>
-                      {% for pilotos in f1 %}
-                          <h2>{{ pilotos.texto }}</h2>
+                       <tbody id="corpo-tabela">
 
-                          <tr>
+                          {% for pilotos in f1 %}
+                                <h2>{{ pilotos.texto }}</h2>
 
-                              <td><a href = "{{ pilotos.edit_path }}"class="btn btn-primary" ><i class="glyphicon glyphicon-pencil"></i></a></td>
+                                 <tr>
 
-                              <td>{{ loop.index}}</td>
-                              <td>{{ pilotos.pil }}</td>
-                              <td>{{ pilotos.equ }}</td>
-                              <td>{{ pilotos.pon }}</td>
+                                     <td><a href = "{{ pilotos.edit_path }}"class="btn btn-primary" ><i class="glyphicon glyphicon-pencil"></i></a></td>
 
-                              <td><form action="{{ pilotos.delete_path }}" method="post">
-                               {{ csrf_input() }}
-                                  <button class="btn btn-danger"><i class = "glyphicon glyphicon-trash"></i></button>
-                              </form>
+                                     <td>{{ loop.index}}</td>
+                                     <td>{{ pilotos.pil }}</td>
+                                     <td>{{ pilotos.equ }}</td>
+                                     <td>{{ pilotos.pon }}</td>
 
-                              </td>
-                          </tr>
-                      {% endfor %}
+                                     <td>
+                                         <form action="{{ pilotos.delete_path }}" method="post" onsubmit="return confirm('{{ _('Você realmente quer deletar? Pressione Cancelar para evitar a exclusão') }}');">
+                                           {{ csrf_input() }}
+                                         <button class="btn btn-danger"><i class = "glyphicon glyphicon-trash"></i></button>
+                                         </form>
 
+                                     </td>
+                                  </tr>
+                          {% endfor %}
+                      </tbody>
                 </table>
 
             </div>

@@ -6,6 +6,7 @@ from tekton import router
 from gaegraph.model import Node
 from google.appengine.ext import ndb
 from gaeforms.ndb.form import ModelForm
+from tekton.gae.middleware.json_middleware import JsonUnsecureResponse
 from tekton.gae.middleware.redirect import RedirectResponse
 
 
@@ -32,17 +33,17 @@ class ClassificacaoForm(ModelForm):
 
 
 
-def salvar(**propriedades):
+def salvar(_resp,**propriedades):
     classificacao_form = ClassificacaoForm(**propriedades)
     erros = classificacao_form.validate()
     if erros:
-        contexto={'salvar_path':router.to_path(salvar),'erros':erros,'classificacao':classificacao_form }
-        return TemplateResponse(contexto,'bdclassificacao/form.html')
-
+       _resp.status_code = 500
+       return JsonUnsecureResponse(erros)
     else:
         classificacao=classificacao_form.fill_model()
         classificacao.put()
-        return RedirectResponse(router.to_path(form))
+        dcp = classificacao_form.fill_with_model(classificacao)
+        return JsonUnsecureResponse(dcp)
 
 
 

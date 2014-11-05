@@ -1,0 +1,27 @@
+{% extends 'classificacaoPilotoss/base.html' %}
+{% block body %}
+    {% set classificacao_pilotos=classificacao_pilotos or None %}
+    {% set errors=errors or None %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <br/>
+
+                <div class="well">
+                    <h1 class="text-center">{% trans %}ClassificacaoPilotos Form{% endtrans %}</h1>
+
+                    <form action="{{ save_path }}" method="post" role="form">
+                        {{ csrf_input() }}
+                        {{ form_input(_('Categoria'),'categoria',classificacao_pilotos.categoria,errors.categoria) }}
+                        {{ form_input(_('Equipe'),'equipe',classificacao_pilotos.equipe,errors.equipe) }}
+                        {{ form_input(_('Pontos'),'pontos',classificacao_pilotos.pontos,errors.pontos) }}
+                        {{ form_input(_('Texto'),'texto',classificacao_pilotos.texto,errors.texto) }}
+                        {{ form_input(_('Pilotos'),'pilotos',classificacao_pilotos.pilotos,errors.pilotos) }}
+                        <button type="submit" class="btn btn-success">{% trans %}Save{% endtrans %}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

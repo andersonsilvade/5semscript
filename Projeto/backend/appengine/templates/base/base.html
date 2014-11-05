@@ -15,30 +15,32 @@
 <head lang="pt-br">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% block title %}auto-top{% endblock %}</title>
     <!-- Bootstrap -->
-    <script src="/static/bootstrap/js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/static/jquery-1.11.1.min.js"></script>
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/default.css" rel="stylesheet">
     <script src="/static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/static/bootstrap/css/bootstrap-responsive.css"></script>
-    <script src="/static/bootstrap/css/bootstrap-responsive.min.css"></script>
+
     <script type="text/javascript" src="/static/bootstrap/js/scripts.js"></script>
-    <style>
+
+    <style type="text/css">
         .pad8 {
             margin: 8px 15px;
             color: #777
         }
     </style>
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    {% block css %}{% endblock %}
+
+    <script type="text/javascript" src="/static/jquery-1.11.1.min.js"></script>
+
+
+
+
+    {% block css %}
+
+    {% endblock %}
     {% block js %}{% endblock %}
 </head>
 <body>
@@ -54,64 +56,69 @@
             <a href="/" class="navbar-brand">Inicio</a>
 
         </div>
-        <div class id = "navbar-collapse collapse" >
-         	  <ul class="nav navbar-nav"> <!--menu -->
+        <div class id="navbar-collapse collapse">
+            <ul class="nav navbar-nav"> <!--menu -->
 
                 {% macro select_tab(tab='') %}
                     <li class="dropdown">
 
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size = "4">Formula 1</font><strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-								<a href="/formula1s"><font font-size="5" color="#1e90ff">Noticia</font></a>
-								</li>
-								<li>
-									<a href="/classificacao/f1">Classificação</a>
-								</li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size="4">Formula
+                            1</font><strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/formula1s"><font font-size="5" color="#1e90ff">Noticia</font></a>
+                            </li>
+                            <li>
+                                <a href="/classificacaoPilotoss/f1">Classificação</a>
+                            </li>
 
-							</ul>
-					</li>
+                        </ul>
+                    </li>
 
                     <li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size = "4">Formula Indy</font><strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="/indys">Noticia</a>
-								</li>
-								<li>
-									<a href="/classificacao/indy">Classificação</a>
-								</li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size="4">Formula
+                            Indy</font><strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/indys">Noticia</a>
+                            </li>
+                            <li>
+                                <a href="/classificacaoPilotoss/indy">Classificação</a>
+                            </li>
 
-							</ul>
-				    </li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size = "4">Nascar</font><strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="/nascars">Noticia</a>
-								</li>
-								<li>
-									<a href="/classificacao/nascar">Classificação</a>
-								</li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size="4">Nascar</font><strong
+                                class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/nascars">Noticia</a>
+                            </li>
+                            <li>
+                                <a href="/classificacaoPilotoss/nascar">Classificação</a>
+                            </li>
 
-							</ul>
-					</li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size = "4">DTM</font><strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="/dtms">Noticia</a>
-								</li>
-								<li>
-									<a href="/classificacao/dtm">Classificação</a>
-								</li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font size="4">DTM</font><strong
+                                class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/dtms">Noticia</a>
+                            </li>
+                            <li>
+                                <a href="/classificacaoPilotoss/dtm">Classificação</a>
+                            </li>
 
-							</ul>
-						</li>
+                        </ul>
+                    </li>
 
 
                     {% if _logged_user and 'ADMIN' in _logged_user.groups %}
-                        <li {{ 'class=active' if tab=='ADMIN' }}><a href="/admin">{% trans %}Admin{% endtrans %}</a></li>
+                        <li {{ 'class=active' if tab=='ADMIN' }}><a href="/admin">{% trans %}Admin{% endtrans %}</a>
+                        </li>
                     {% endif %}
                 {% endmacro %}
                 {% block tabs %}
@@ -136,14 +143,15 @@
 
             </div>
 
+        </div>
     </div>
-</div>
 
-{% block body %}{% endblock %}
-<div class="footer" style="background-color:#357ebd" >
-    <div class="container" >
-        <p class="text-muted text-right" style="color: #000000"><b>Desenvolvido por Anderson Silva de Albuquerque </b></p>
+    {% block body %}{% endblock %}
+    <div class="footer" style="background-color:#357ebd">
+        <div class="container">
+            <p class="text-muted text-right" style="color: #000000"><b>Desenvolvido por Anderson Silva de
+                Albuquerque </b></p>
+        </div>
     </div>
-</div>
 </body>
 </html>
